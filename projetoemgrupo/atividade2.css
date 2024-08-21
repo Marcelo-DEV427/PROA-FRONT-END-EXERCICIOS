@@ -1,0 +1,83 @@
+#corpo{
+    margin: auto;
+    height: auto;
+    position: relative;
+    width: 880px;
+}
+#cabeçalho{
+    background-color: rgb(180, 247, 10);
+    text-align: center;
+    font-size: 25px;
+    height: 100px;
+    position: relative;
+}
+#le{
+    background-color: aquamarine;
+    height: 500px;
+    width: 350px;
+    position: relative;
+    float: left;
+}
+#tag_nav{
+    background-color: white;
+    height: 220px;
+    width: 330px;
+    position: relative;
+    left: 10px;
+    top: -480px;
+    z-index: 1;
+    clear: left;
+}
+#tag_aside{
+    background-color:white;
+    height: 220px;
+    width: 330px;
+    position: relative;
+    left: 10px;
+    top:-464px;
+    z-index: 1;
+    clear: left;
+}
+#ld{
+    background-color: rgb(183, 108, 245);
+    height: 500px;
+    width: 880px;
+    position: relative;
+}
+#artigle{
+    background-color: rgb(186, 245, 255);
+    height: 40px;
+    width:518px;
+    position: relative;
+    left: 350px;
+    top: -910px;
+    z-index: 1;
+}
+#tag_texto{
+    background-color: salmon;
+    height: 176px;
+    width: 518px;
+    position: relative;
+    left: 350px;
+    top: -905px;
+    z-index: 1;
+}
+#tag_imagem{
+    background-color: rgb(211, 185, 248);
+    height: 220px;
+    width: 518px;
+    position: relative;
+    left: 350px;
+    top: -900px;
+    z-index: 1;
+}
+#tag_footer{
+    background-color: red;
+    height: 90px;
+    width: 880px;
+    position: relative;
+    top: -880px;
+    color: white;
+    z-index: 1;
+    text-align: center;
+}

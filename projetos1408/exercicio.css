@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+main{
+    position: relative;
+    width:90%;
+    height: auto;
+    background-color: bisque;
+    margin: auto;
+    
+}
+header{
+    position: relative;
+    width: 100%;
+    height: auto;
+    color: white;
+    background-color:black;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+    #azul{
+        position: relative;
+        width: 100%;
+        background-color: blue;
+        height: 60px;
+        color: white;
+        font-size: 30px;
+    }
+    #bege{
+        position: relative;
+        width: 25%;
+        height: 600px;
+        background-color: bisque;
+        top: 10px;
+        float: left;
+    }
+    section{
+        position: relative;
+        background-color:rgb(245, 178, 245);
+        width: 50%;
+        height: 600px;
+        top: 10px;
+        text-align: center;
+        float: left;
+    }
+    #aside{
+        position: relative;
+        width: 50%;
+        height: 600px;
+        top: -40px;
+        left: 853px;
+        background-color:rgb(209, 0, 251); 
+        }
+        #dentro{
+            position: relative;
+            color: black;
+            width: 95%;
+            height: 40px;
+            top: -600px;
+            left: 20px;
+            background-color: white;
+            clear: left;
+        }
+
+        #marrom{
+            position: relative;
+            color: white;
+            width: 95%;
+            height: 200px;
+            top: -590px;
+            left: 20px;
+            background-color: coral;
+            clear: left;
+            text-align: center;
+        }
+       
+    
+        #quadrados{
+            position: relative;
+            width: 95%;
+            margin: auto;
+            height: 100px;
+            top: -400px;
+    
+        }
+        
+        .divCinza{
+            position: relative;
+            background-color: rgb(56, 56, 56);
+            float:left;
+            width: 32%;
+            margin: 0px 3px 0px 5px;
+            height: 100px;
+        
+        }
+        p{
+            position: relative;
+            background-color: grey;
+            width: 95%;
+            height:150px ;
+            top:-670px;
+            left: 20px;
+            text-align: left;
+            color: rgb(0, 0, 0);
+        }
+        footer{
+            position: relative;
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            color: aliceblue;
+            clear: left;
+            text-align: center;
+        }

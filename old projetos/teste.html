@@ -1,0 +1,100 @@
+<!DOCTYPE html> <!-- indicação versão HTML5 -->
+<html>
+<head>
+    <title>Testando as primeiras tags</title>
+    <style>
+        body {
+            font-size: 20px;/* tamanho da fonte */
+            color: blue; /*cor da fonte */
+            text-align: center; /*alinhamento centralizado*/
+            background-color: black; /*cor de fundo*/
+            background-image: url("Imagens/kali.jpg"); /* insere uma imagem no fundo */
+            background-repeat: no-repeat; /*não deixa a imagem se repetir*/
+            background-position: center center; /*deixa a imagem no centro (contém variações)*/
+            background-attachment: fixed; /* fixa a imagem do fundo da pagina */
+            background-size: cover; /* preenche o fundo da pagina*/
+        }
+        h1{
+            font-size: 3em; /*px, pt, ens, picas, cm, mm, % */
+            color: brown;
+            background-color: bisque;
+            /* da para colocar o fundo no texto background-image: url(Imagens/arch.jpg);*/
+        }
+        h2{
+            font-size: 3em;
+            color: blueviolet;
+            background-color: azure;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+        h3{
+            color: coral;
+            background-color: blue;
+            width: 600px; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*mudança de fonte */ 
+            font-weight: normal; /* negrito */
+            text-decoration: underline; /*sublinhado */
+        }
+        h3.diferente{
+            background-color: yellowgreen;
+        }
+        #logodebian{
+            width: 200px; /* altura */
+            height: 150px; /*largura */
+        }
+        #backarchlinux{
+            width: 200px;
+            height: 150px;
+        }
+        #loglubuntu{
+            width: 200px;
+            height: 150px;
+        }
+        
+        h4,h5,h6 {
+            font-size: 30px;/* tamanho da fonte */
+            color: rgb(206, 248, 18); /*cor da fonte */
+            text-align: center; /*alinhamento centralizado*/
+            background-color: rgb(9, 255, 0); /*cor de fundo*/
+            width: 800px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-left:400px;
+        }
+        h4{
+            background-color: blueviolet;   
+            margin:auto;/*centraliza o componente na horizontal*/
+            border: 5px; /*espessura da borda*/
+            border-style: solid; /* estilo da borda*/
+            border-color: red; /* cor da borda */
+            padding: 10px;/* espaço para dentro da área*/
+        }
+        h5 {
+            margin: 30px 0px 20px 200px;
+            border: 3px double black;
+        }
+        h6{
+            text-align: left;
+            margin: 20px;
+            border-bottom: 8px dotted white;
+        }
+    </style>
+</head>
+<body>
+    <p>Um texto qualquer<p> <!--tag de parágrafo --> 
+    <h1>Testando a heading H1 </h1>
+    <h2>Testando a heading H2 </h2>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores sapiente minima dolore sed perspiciatis ipsam voluptas nemo. Ducimus doloribus quo ea deleniti error, nam, quod, unde labore pariatur itaque dolor.</p>
+
+    <h3>Testando a heading H3 </h3>
+    <h3 class="diferente">Testando a heading H3 </h3>
+    <h3>Testando a heading H3 </h3>
+
+    <h4>Testando a heading H4 </h4>
+    <h5>Testando a heading H5 </h5>
+    <h6>Testando a heading H6 </h6>
+
+    <img id="logodebian" src="Imagens/Debian-logo.png" alt="logo da distro Debian"  title="logo da distro Debian"/>
+    <img id= "backarchlinux" src="Imagens/arch.jpg" alt="Foto backgorud do ArchLinux" title="Foto backgorud do ArchLinux"/>
+    <img id="loglubuntu" src="Imagens/Lubuntulogo.png" alt="Logo da distro linux Lubuntu"  title="Logo da distro linux Lubuntu"/>
+</body>
+</html>

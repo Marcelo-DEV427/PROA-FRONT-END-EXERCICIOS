@@ -1,0 +1,76 @@
+#camada1{
+    background-color: aqua;
+    text-align: center;
+    width: 800px;
+    height: 100px;
+    background-position: center center;
+    text-align: center;
+}
+#camada2{
+    position: absolute;
+    top:120px;
+    left:650px;
+    width: 155px;
+    height:150px;
+    text-align: center;  
+    background-color: antiquewhite;
+    z-index :1;
+    float:left;
+    z-index: 3;
+}
+#camada3{
+    position: absolute;
+    top: 275px;
+    left:650px;
+    width: 155px;
+    height:150px;
+    text-align: center;  
+    background-color: antiquewhite;
+    z-index :1;
+    float:left;
+    z-index: 3;
+}
+#camada4{
+    position: absolute;
+    top: 120px;
+    left:100px;
+    width: 545px;
+    height:650px;
+    text-align: center;  
+    background-color: grey;
+    z-index :1;
+    float:left;
+    text-align: left;
+    z-index: 2;
+}
+#camada5{
+    position: absolute;
+    top: 120px;
+    width: 800px;
+    height:650px;
+    text-align: center;  
+    background-color: rgb(203, 186, 231);
+    z-index :1;
+    float:left;
+    text-align: left;
+    z-index: 1;
+}
+#camera{
+    position: absolute;
+    top: 620px;
+    float: left;
+    width: 800px;
+    height:650px;
+    text-align: center;
+    left: 200px;
+    z-index: 3;
+}
+#camada6{
+    background-color:blue;
+    top: 800px;
+    width: 800px;
+    height: 100px;
+    background-position: center center;
+    text-align: left;
+    z-index: 5;
+    }
