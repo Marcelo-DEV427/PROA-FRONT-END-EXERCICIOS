@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+    <script type="text/javascript">
+        window.tailwind.config = {
+            darkMode: ['class'],
+            theme: {
+                extend: {
+                    colors: {
+                        border: 'hsl(var(--border))',
+                        input: 'hsl(var(--input))',
+                        ring: 'hsl(var(--ring))',
+                        background: 'hsl(var(--background))',
+                        foreground: 'hsl(var(--foreground))',
+                        primary: {
+                            DEFAULT: 'hsl(var(--primary))',
+                            foreground: 'hsl(var(--primary-foreground))'
+                        },
+                        secondary: {
+                            DEFAULT: 'hsl(var(--secondary))',
+                            foreground: 'hsl(var(--secondary-foreground))'
+                        },
+                        destructive: {
+                            DEFAULT: 'hsl(var(--destructive))',
+                            foreground: 'hsl(var(--destructive-foreground))'
+                        },
+                        muted: {
+                            DEFAULT: 'hsl(var(--muted))',
+                            foreground: 'hsl(var(--muted-foreground))'
+                        },
+                        accent: {
+                            DEFAULT: 'hsl(var(--accent))',
+                            foreground: 'hsl(var(--accent-foreground))'
+                        },
+                        popover: {
+                            DEFAULT: 'hsl(var(--popover))',
+                            foreground: 'hsl(var(--popover-foreground))'
+                        },
+                        card: {
+                            DEFAULT: 'hsl(var(--card))',
+                            foreground: 'hsl(var(--card-foreground))'
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-white">
+    <div class="bg-background text-foreground p-4">
+        <header class="flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-red-500">NETFLIX</h1>
+            <nav class="flex space-x-4">
+                <a href="#" class="text-white">Início</a>
+                <a href="#" class="text-white">Séries</a>
+                <a href="#" class="text-white">Filmes</a>
+                <a href="#" class="text-white">Bombando</a>
+                <a href="#" class="text-white">Minha lista</a>
+                <a href="#" class="text-white">Navegar por idiomas</a>
+            </nav>
+            <div class="flex items-center space-x-2">
+                <input type="text" placeholder="🔍" class="border border-border rounded-md p-2" />
+                <button class="bg-secondary text-secondary-foreground p-2 rounded-lg">Infantil</button>
+            </div>
+        </header>
+        <div class="relative mt-6">
+            <img src="netflix-background-gs7hjuwvv2g0e9fj.jpg" alt="Outlander" class="w-full h-auto rounded-lg" />
+            <div class="absolute bottom-10 left-10">
+                <h2 class="text-4xl font-bold text-white">OUTLANDER</h2>
+                <div class="mt-4">
+                    <button class="bg-primary text-primary-foreground hover:bg-primary/80 p-2 rounded-lg">Assistir</button>
+                    <button class="bg-muted text-muted-foreground hover:bg-muted/80 p-2 rounded-lg ml-2">Mais informações</button>
+                </div>
+            </div>
+        </div>
+        <h3 class="mt-8 text-xl font-semibold text-white">Séries dos EUA dubladas em português</h3>
+        <div class="flex space-x-4 overflow-x-auto mt-4">
+            <div class="bg-card rounded-lg p-2">
+                <img src="EbrzYdvXYAAJqWs.jpg" alt="The Umbrella Academy" class="recomendados" />
+                <p class="text-center text-white">The Umbrella Academy</p>
+            </div>
+            <div class="bg-card rounded-lg p-2">
+                <img src="featuredImage.png" alt="Emily em Paris" class="recomendados" />
+                <p class="text-center text-white">Emily em Paris</p>
+            </div>
+            <div class="bg-card rounded-lg p-2">
+                <img src="717AT7AC-ZL._AC_UF1000,1000_QL80_.jpg" alt="Arcane" class="recomendados" />
+                <p class="text-center text-white">Arcane</p>
+            </div>
+            <div class="bg-card rounded-lg p-2">
+                <img src="5007043.webp" alt="Sweet Tooth" class="recomendados" />
+                <p class="text-center text-white">Sweet Tooth</p>
+            </div>
+            <div class="bg-card rounded-lg p-2">
+                <img src="5096592.jpg" alt="Gossip Girl" class="recomendados" />
+                <p class="text-center text-white">Gossip Girl</p>
+            </div>
+            <div 
+            
