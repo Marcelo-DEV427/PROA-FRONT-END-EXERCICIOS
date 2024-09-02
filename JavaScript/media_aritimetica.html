@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando a media aritmetica</title>
+</head>
+<body>
+    <h1>Calculando a média das notas</h1>
+    <script>
+       let nota1 = parseFloat(prompt("Entre com a primeira nota:"))
+       let nota2 = parseFloat(prompt("Entre com a segunda nota:"))
+       let nota3 = parseFloat(prompt("Entre com a terceira nota:"))
+       let nota4 = parseFloat(prompt("Entre com a quarta nota:"))
+        let média = (nota1 + nota2 + nota3 + nota4) / 4
+        document.write("sua média é: " +média +"<br>")
+
+        if(média >= 6){
+            document.write (" Parabéns! voce está aprovado!")
+        }else if(média>=5){
+            document.write("<br> voce está de recuperação")
+            }
+            else{
+                document.write("<br>que pena voce foi reprovado")
+            }
+
+    </script>
+</body>
+</html>
