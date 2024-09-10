@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma dos Números</title>
+</head>
+<body>
+    <script>
+       
+        let limite = parseInt(prompt("Digite o valor até onde você deseja somar :"));
+
+        if (isNaN(limite) || limite <= 0) {
+            alert("Por favor, insira um número válido e positivo.");
+        } else {
+         
+            let soma = 0;
+
+         
+            let numero = 1;
+
+          
+            while (numero <= limite) {
+                soma += numero;
+                numero++;
+            }
+
+
+            alert("A soma dos números de 1 a " + limite + " é: " + soma);
+        }
+    </script>
+</body>
+</html>

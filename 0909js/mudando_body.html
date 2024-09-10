@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando troca de conteúdo JavaScript</title>
+    <style>
+        body{
+            background-color: teal;
+            color:chocolate;
+            text-align: center;
+        }
+
+        .myImage{
+            width: 500px;
+            height: 380px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body class="fundo">
+  
+    <h1  id="titulo">Testando mundança de cor de fundo Body, a cor da fonte e a imagem da página.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis delectus molestiae, dolor quae cum dignissimos laboriosam hic laborum perspiciatis veritatis maxime dicta, provident fugiat eos quasi sed illo. Porro, eaque.</p>
+
+    <input type="button" id="verde" value="cor verde" onclick="verde()" />
+    <input type="button" id="azul" value="cor azul" onclick="azul()" />
+    <input type="button" id="corhome" value="home" onclick="azulh()" />
+    <input type="button" id="escuro" value="modo escuro" onclick="escuro()" />
+    <input type="button" id="daltonico" value="modo daltonico" onclick="daltonico()" />
+    <input type="button" id="acessibilidade" value="acessibilidade" onclick="acessibilidade()" />
+
+
+    <hr />
+    <img src="/imagens/debian.png" class="myImage">
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe inventore culpa dolores eum magni iste ratione molestiae vero, assumenda illum omnis voluptate aut atque libero voluptatem commodi, aliquid facere ducimus!</p>
+    <script>
+        let header = document.getElementById("titulo");
+
+
+
+
+        function verde(){
+            document.querySelector(".fundo").style.backgroundColor="green";
+            document.querySelector(".fundo").style.color="white";
+            document.querySelector(".myImage").src="imagens/debian.png";
+            document.querySelector(".fundo").style.fontSize="15px";
+        }
+        function azul(){
+            document.querySelector(".fundo").style.backgroundColor="blue";
+            document.querySelector(".fundo").style.color="yellow";
+            document.querySelector(".myImage").src="/imagens/arch.jpg";
+            document.querySelector(".fundo").style.fontSize="15px";
+        }
+        function azulh(){
+            document.querySelector(".fundo").style.backgroundColor="orange";
+            document.querySelector(".fundo").style.color="red";
+            document.querySelector(".myImage").src="/imagens/arch.jpg";
+            document.querySelector(".fundo").style.fontSize="15px";
+        }
+        function escuro(){
+            document.querySelector(".fundo").style.backgroundColor="black";
+            document.querySelector(".fundo").style.color="white";
+            document.querySelector(".myImage").src="/imagens/arch.jpg";
+            document.querySelector(".fundo").style.fontSize="15x";
+            header.innerHTML="Testando o modo escuro";
+        }
+        function daltonico(){
+            document.querySelector(".fundo").style.backgroundColor="#b34db2";
+            document.querySelector(".fundo").style.color="#90ee90";
+            document.querySelector(".myImage").src="/imagens/arch.jpg";
+            document.querySelector(".fundo").style.fontSize="15px";
+            header.innerHTML="Testando o modo daltonico";
+        }
+        
+        function acessibilidade(){
+            document.querySelector(".fundo").style.backgroundColor="white";
+            document.querySelector(".fundo").style.color="black";
+            document.querySelector(".fundo").style.fontSize="30px";
+            document.querySelector(".myImage").src="/imagens/arch.jpg";
+            header.innerHTML="Testando o modo acessibilidade";
+        }
+        
+        
+    </script>
+</body>
+</html>
