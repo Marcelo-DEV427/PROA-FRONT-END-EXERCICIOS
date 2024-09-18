@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Média</title>
+</head>
+<body>
+    <script>
+        let alunosAprovados = 0;
+
+        while (true) {
+            const nota1 = parseFloat(prompt("Digite a primeira nota do aluno:"));
+            const nota2 = parseFloat(prompt("Digite a segunda nota do aluno:"));
+            const media = (nota1 + nota2) / 2;
+
+            if (media >= 5.0) {
+                alunosAprovados++;
+                alert("Média final: " + media.toFixed(2) + " - Aluno aprovado!");
+            } else {
+                alert("Média final: " + media.toFixed(2) + " - Aluno reprovado!");
+            }
+
+            const continuar = prompt("Calcular a média de outro aluno? (S/N)").toUpperCase();
+            if (continuar !== 'S') {
+                break;
+            }
+        }
+
+        document.write("Quantidade de alunos aprovados: " + alunosAprovados);
+    </script>
+</body>
+</html>

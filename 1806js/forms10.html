@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuadas de 1 a N</title>
+</head>
+<body>
+    <script>
+        const N = parseInt(prompt("Digite um valor N para calcular as tabuadas de 1 a N:"));
+
+        if (N > 0) {
+            for (let i = 1; i <= N; i++) {
+                document.write("<h3>Tabuada do " + i + ":</h3>");
+                for (let j = 1; j <= 10; j++) {
+                    document.write(i + " x " + j + " = " + (i * j) + "<br>");
+                }
+                document.write("<br>");
+            }
+        } else {
+            document.write("Por favor, insira um valor maior que zero.");
+        }
+    </script>
+</body>
+</html>

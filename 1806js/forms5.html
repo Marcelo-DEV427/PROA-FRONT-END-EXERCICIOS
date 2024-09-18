@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Aritmética</title>
+</head>
+<body>
+    <script>
+        const primeiroNumero = parseInt(prompt("Digite o primeiro número inteiro:"));
+        const segundoNumero = parseInt(prompt("Digite o segundo número inteiro:"));
+
+        if (primeiroNumero >= segundoNumero) {
+            alert("O primeiro número deve ser menor que o segundo.");
+        } else {
+            let soma = 0;
+            let contagem = 0;
+
+            for (let i = primeiroNumero; i <= segundoNumero; i++) {
+                soma += i;
+                contagem++;
+            }
+
+            const media = soma / contagem;
+            document.write("A média aritmética dos números entre " + primeiroNumero + " e " + segundoNumero + " é: " + media);
+        }
+    </script>
+</body>
+</html>

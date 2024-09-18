@@ -1,0 +1,140 @@
+div{
+   position: relative;
+    width: 300px;
+    height: 300px;
+    float: left;
+    border: solid 1px #333;
+}
+img{
+    width: 80%;
+    border: solid 1px #333;
+    padding: 10px;   
+}
+
+#foto img{
+    transform: rotate(0deg);
+    transition: 0.3s all ;   
+}
+
+#foto img:hover{
+    transform: rotate(50deg);
+    transition: 0.3s all ;
+}
+#foto1 img{
+    transform: rotateX(0deg);
+    transition: 0.3s all;
+}
+#foto1 img:hover{
+    transform: rotateX(50deg);
+    transition: 0.3s all;
+}
+#foto2 img{
+    transition: 0.3s all;
+}
+#foto2 img:hover{
+    transform: rotateY(180deg);
+    transition: 0.3s all;
+}
+#foto3 img{
+    transition: 0.3s all;
+}
+#foto3 img:hover{
+    transform: translate(100px, 50px);
+    transition: 0.3s all;
+}
+#foto4 img{
+    transition: 0.3s all;
+}
+#foto4 img:hover{
+    transform: translateX(200px);
+    transition: 0.3s all;
+}
+#foto5 img{
+    transition: 0.3s all;
+}
+#foto5   img:hover{
+    transform: translate(100px, 50px) rotate(180deg);
+    transition: 0.3s all;
+}
+#foto6 img{
+    transition: 0.3s all;
+}
+#foto6   img:hover{
+    transform: scale(0.5);
+    transition: 0.3s all;
+}
+#foto7 img{
+    transition: 0.3s all;
+}
+#foto7   img:hover{
+    transform: scale(1.5);
+    transition: 0.3s all;
+}
+#foto8 img{
+    transition: 0.3s all;
+}
+#foto8   img:hover{
+transition: all 0.3s ease-out;
+-webkit-transform: scale(1.8) translate(20px, 50px) rotate(360deg);
+}
+.muda_fundo{
+    background-image: url(/imagens/debian.png);
+    background-size: cover;
+    width: 900px;
+    height: 600px;
+}
+.muda_fundo:hover{
+    background-image: url(/imagens/arch.jpg);
+    transition: 2s  all;
+    width: 900px;
+    height: 600px;
+}
+.efeito_texto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+    font-size: 50px;
+    -webkit-text-fill-color: black;
+    clear: left;
+    -webkit-text-stroke-color: red;
+    -webkit-text-stroke-width: 2px;
+}
+#box{
+    width: 300px;
+    height: 200px;
+    border:1px;
+    background-color: #df9;
+    box-shadow: -10px -10px 20px #090;
+    border-radius: 20px;
+    padding: 10px;
+}
+.sombra_texto{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+        text-shadow: 5px 5px 10px #099;
+        clear: left;
+}
+.colunas{
+        font-family: Verdana;
+        font-size: 12px;
+        font-weight: bold;
+            -webkit-column-count:3;
+            -webkit-column-rule:1px;
+            -webkit-column-gap:1em; 
+            text-align: justify;
+}
+.box2{
+    width: 600px;
+    height: 500px;
+    border:10px solid;
+    background-image: url(imagens/Component\ 1.png);
+    background-size: 90%;
+    padding: 20px;
+}
+#transparente{
+    width: 400px;
+    height: 300px;
+    margin: auto;
+        margin-top: 80px;
+        background-color: rgba(155,0,3)
+}

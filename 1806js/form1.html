@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function lerNumero(mensagem) {
+    const valor = parseFloat(prompt(mensagem));
+    return isNaN(valor) ? null : valor;
+}
+
+const primeiroValor = parseFloat(prompt("Digite o primeiro valor:"));
+let segundoValor;
+
+do {
+    segundoValor = parseFloat(prompt("Digite o segundo valor (deve ser maior que ZERO):"));
+    if (segundoValor <= 0) {
+        alert("Valor inválido! O segundo valor deve ser maior que ZERO.");
+    }
+} while (segundoValor <= 0);
+
+const resultado = primeiroValor / segundoValor;
+console.log(`O resultado da divisão de ${primeiroValor} por ${segundoValor} é: ${resultado}`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem de Valores</title>
+</head>
+<body>
+    <script>
+        let dentroIntervalo = 0;
+        let foraIntervalo = 0;
+
+        for (let i = 1; i <= 10; i++) {
+            const valor = parseFloat(prompt("Digite o valor " + i + ":"));
+
+            if (valor >= 24 && valor <= 42) {
+                dentroIntervalo++;
+            } else {
+                foraIntervalo++;
+            }
+        }
+
+        document.write("Quantidade de valores entre 24 e 42 (inclusive): " + dentroIntervalo + "<br>");
+        document.write("Quantidade de valores fora do intervalo: " + foraIntervalo);
+    </script>
+</body>
+</html>

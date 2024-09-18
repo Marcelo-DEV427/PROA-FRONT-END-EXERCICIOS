@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprimir Números</title>
+</head>
+<body>
+    <script>
+        const N = parseInt(prompt("Digite um valor N (maior que ZERO):"));
+
+        if (N > 0) {
+            for (let i = 1; i <= N; i++) {
+                document.write(i + "<br>");
+            }
+        } else {
+            document.write("O valor de N deve ser maior que ZERO.");
+        }
+    </script>
+</body>
+</html>
