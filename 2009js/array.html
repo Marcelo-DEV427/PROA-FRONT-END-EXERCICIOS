@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obras de Machado de Assis</title>
+</head>
+<body>
+    <h1>Obras de Machado de Assis</h1>
+    
+    <h2>Romances</h2>
+    <ul id="romances"></ul>
+    
+    <h2>Coletânea de Poesias</h2>
+    <ul id="poesias"></ul>
+    
+    <h2>Coletânea de Contos</h2>
+    <ul id="contos"></ul>
+    
+    <h2>Três Primeiros Livros de Cada Grupo</h2>
+    <ul id="tresPrimeirosLivros"></ul>
+
+    <script>
+        let romances = [
+            "Memorial de Aires (1908)",
+            "Ressurreição (1872)",
+            "Casa Velha (1885)",
+            "Memórias Póstumas de Brás Cubas (1881)",
+            "Helena (1876)",
+            "Quincas Borba (1891)",
+            "Esaú e Jacó (1904)",
+            "A mão e a luva (1874)",
+            "Dom Casmurro (1899)",
+            "Iaiá Garcia (1878)"
+        ];
+        //romances.pop("Iaiá Garcia (1878)")
+       // romances.pop( "Dom Casmurro (1899)")
+       // romances.pop(  "A mão e a luva (1874)")
+        //romances.pop("Esaú e Jacó (1904)")
+       // romances.pop("Quincas Borba (1891)")
+        //romances.pop( "Helena (1876)")
+       // romances.pop( "Memórias Póstumas de Brás Cubas (1881)")
+
+        
+
+        let poesias = [
+            "Americanas (1875)",
+            "Ocidentais (1880)",
+            "Falenas (1870)",
+            "Crisálidas (1864)",
+            "Poesias Completas (1901)"
+        ];
+        //poesias.pop( "Poesias Completas (1901)")
+       // poesias.pop( "Crisálidas (1864)",)
+
+
+
+        let contos = [
+            "Várias Histórias (1896)",
+            "Histórias sem Data (1884)",
+            "Papéis Avulsos (1882)",
+            "Contos Fluminenses (1870)",
+            "Histórias da Meia-Noite (1873)",
+            "Relíquias de Casa Velha (1906)",
+            "Páginas Recolhidas (1899)"
+        ];
+        //contos.pop( "Páginas Recolhidas (1899)")
+        //contos.pop("Relíquias de Casa Velha (1906)",)
+        //contos.pop( "Histórias da Meia-Noite (1873)",)
+        //contos.pop( "Contos Fluminenses (1870)")
+
+        let tresPrimeirosLivros = [
+            romances[0], romances[1], romances[2],
+            poesias[0], poesias[1], poesias[2],
+            contos[0], contos[1], contos[2]
+        ];
+
+        function displayList(list, elementId) {
+            let ul = document.getElementById(elementId);
+            list.forEach(function(item) {
+                let li = document.createElement("li");
+                li.textContent = item;
+                ul.appendChild(li);
+            });
+        }
+
+        displayList(romances, "romances");
+        displayList(poesias, "poesias");
+        displayList(contos, "contos");
+        displayList(tresPrimeirosLivros, "tresPrimeirosLivros");
+    </script>
+</body>
+</html>

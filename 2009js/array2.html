@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventário de Drofo e Torper</title>
+</head>
+<body>
+    <h1>Aventura Mágica de Drofo e Torper</h1>
+
+    <script>
+        let drofo = [
+            "Anel da invisibilidade",
+            "2 Pares de botas mágicas",
+            "Poção do sono",
+            "2 Poções da inocência"
+        ];
+
+        let torper = [
+            "Capa da invisibilidade",
+            "Pedra do despertar",
+            "Varinha das varinhas",
+            "Poção da inocência",
+            "2 Poções da mentira",
+            "Poção anti-inteligência"
+        ];
+
+        torper[4] = "1 Poção da mentira";
+        torper.splice(1, 1);
+        torper.push("Par de botas mágicas");
+        torper.push("Escudo mágico");
+        torper.push("Espada mágica");
+
+        drofo[1] = "3 Pares de botas mágicas";
+        drofo.splice(2, 1);
+        torper.splice(torper.indexOf("Poção anti-inteligência"), 1);
+        drofo.push("Poção anti-inteligência");
+        drofo.push("Ovo de dragão");
+        drofo.push("Coxinha");
+
+        document.write("<h2>Inventário Final de Drofo:</h2>");
+        document.write("<ul>");
+        drofo.forEach(function(item) {
+            document.write("<li>" + item + "</li>");
+        });
+        document.write("</ul>");
+
+        document.write("<h2>Inventário Final de Torper:</h2>");
+        document.write("<ul>");
+        torper.forEach(function(item) {
+            document.write("<li>" + item + "</li>");
+        });
+        document.write("</ul>");
+    </script>
+</body>
+</html>
