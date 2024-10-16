@@ -1,0 +1,118 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+.header {
+  text-align: center;
+  background-color: #d32f2f;
+}
+
+.navbar a {
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+}
+
+/* Seção de Introdução */
+.intro {
+  display: flex;
+  padding: 20px;
+  background-color:rgb(241, 159, 159)
+}
+.intro p{
+  color: white;
+}
+.intro h2{
+  color: white;
+}
+.intro img {
+  width: 40%;
+  margin-left: 20px;
+}
+
+/* Produtos */
+.products {
+  display: flex;
+  justify-content: space-around;
+  background-color:white;
+  padding: 20px;
+  width: 100%;
+}
+
+.product {
+  text-align: center;
+}
+
+.price {
+  color: red;
+  font-weight: bold;
+}
+
+/* Localização */
+.location {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ff9800;
+  padding: 20px;
+}
+
+/* Formulário de Contato */
+.contact {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffeb3b;
+  padding: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.contact input, .contact textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.contact button {
+  padding: 10px;
+  background-color: #0d47a1;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.social-media {
+  display: flex;           /* Habilita o Flexbox */
+  justify-content: flex-end; /* Alinha os itens à direita */
+  padding: 20px;          /* Ajuste conforme necessário */
+}
+
+.social-media .icons img {
+  width: 7%;
+  margin: 5px;
+}
+
+
+/* Rodapé */
+.footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
