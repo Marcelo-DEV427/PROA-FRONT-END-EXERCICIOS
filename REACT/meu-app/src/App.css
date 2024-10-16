@@ -8,7 +8,11 @@
 body {
   font-family: Arial, sans-serif;
 }
-
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
 
 .header {
   text-align: center;
@@ -28,10 +32,14 @@ body {
 
 
 .intro {
-  display: flex;
+  width: 100%; 
+  text-align: center; 
   padding: 20px;
-  background-color:rgb(241, 159, 159)
+  background-color: rgb(241, 159, 159);
+  flex-grow: 1; 
 }
+  
+
 .intro p{
   color: white;
 }
@@ -50,12 +58,20 @@ body {
   background-color:white;
   padding: 20px;
   width: 100%;
+  width: 100%; 
+  text-align: center; 
+  padding: 20px;
+  background-color: rgb(241, 159, 159);
+  flex-grow: 1; 
 }
 
 .product {
   text-align: center;
 }
-
+.product img {
+  width: 100%; 
+  height: auto; 
+}
 .price {
   color: red;
   font-weight: bold;
@@ -67,6 +83,11 @@ body {
   justify-content: space-around;
   background-color: #ff9800;
   padding: 20px;
+  width: 100%; 
+  text-align: center; 
+  padding: 20px;
+  background-color: rgb(241, 159, 159);
+  flex-grow: 1; 
 }
 
 
@@ -75,6 +96,11 @@ body {
   justify-content: space-around;
   background-color: #ffeb3b;
   padding: 20px;
+  width: 100%; 
+  text-align: center; 
+  padding: 20px;
+  background-color: rgb(241, 159, 159);
+  flex-grow: 1; 
 }
 
 .contact form {
