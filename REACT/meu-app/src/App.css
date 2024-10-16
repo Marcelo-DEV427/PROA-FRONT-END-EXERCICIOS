@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +9,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Cabeçalho */
+
 .header {
   text-align: center;
   background-color: #d32f2f;
@@ -26,7 +26,7 @@ body {
   height: auto;
 }
 
-/* Seção de Introdução */
+
 .intro {
   display: flex;
   padding: 20px;
@@ -43,7 +43,7 @@ body {
   margin-left: 20px;
 }
 
-/* Produtos */
+
 .products {
   display: flex;
   justify-content: space-around;
@@ -61,7 +61,7 @@ body {
   font-weight: bold;
 }
 
-/* Localização */
+
 .location {
   display: flex;
   justify-content: space-around;
@@ -69,7 +69,7 @@ body {
   padding: 20px;
 }
 
-/* Formulário de Contato */
+
 .contact {
   display: flex;
   justify-content: space-around;
@@ -98,9 +98,9 @@ body {
 }
 
 .social-media {
-  display: flex;           /* Habilita o Flexbox */
-  justify-content: flex-end; /* Alinha os itens à direita */
-  padding: 20px;          /* Ajuste conforme necessário */
+  display: flex;          
+  justify-content: flex-end; 
+  padding: 20px;          
 }
 
 .social-media .icons img {
@@ -109,7 +109,7 @@ body {
 }
 
 
-/* Rodapé */
+
 .footer {
   text-align: center;
   background-color: black;

@@ -9,9 +9,9 @@ import instaImage from './imagens/insta.jpeg'
 function App() {
   return (
     <div className="container">
-      {/* Cabeçalho */}
+
       <header className="header">
-        <img src={headerImage} alt="Header" className="banner" /> {/* <--- Usando a imagem importada */}
+        <img src={headerImage} alt="Header" className="banner" /> 
         <nav className="navbar">
           <a href="#">Home</a>
           <a href="#">Quem Somos</a>
@@ -20,7 +20,7 @@ function App() {
           <a href="#">Contato</a>
         </nav>
       </header>
-      {/* Seção de Introdução */}
+
       <section className="intro">
         <div className="intro-text">
           <h2>Nossa Loja - Instrumentos Musicais</h2>
@@ -35,7 +35,7 @@ O trecho padrão original de Lorem Ipsum, usado desde o século XVI, está repro
         />
       </section>
 
-      {/* Produtos em Destaque */}
+  
       <section className="products">
         {Array.from({ length: 5 }).map((_, index) => (
           <div key={index} className="product">
@@ -48,7 +48,7 @@ O trecho padrão original de Lorem Ipsum, usado desde o século XVI, está repro
         ))}
       </section>
 
-      {/* Mapa e Informações */}
+  
       <section className="location">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5013742053377!2d-46.656573384473726!3d-23.58801346749209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a3a5b53a935%3A0x2f826bca21a25d6c!2sRua%20Tito%2C%2054%20-%20Vila%20Romana%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005060-050!5e0!3m2!1spt-BR!2sbr!4v1697409098362!5m2!1spt-BR!2sbr"
@@ -67,7 +67,7 @@ O trecho padrão original de Lorem Ipsum, usado desde o século XVI, está repro
         </div>
       </section>
 
-      {/* Formulário de Contato */}
+     
       <section className="contact">
         <form>
           <input type="text" placeholder="Digite seu nome" />
