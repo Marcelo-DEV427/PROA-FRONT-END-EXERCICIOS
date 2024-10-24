@@ -13,14 +13,14 @@
     while (true) {
         escolha = parseInt(prompt(mensagem), 10);
         if (escolha >= 1 && escolha <= opcoes.length) {
-            return escolha - 1; // Ajusta a escolha para o índice da lista
+            return escolha - 1; 
         } else {
             alert('Escolha inválida. Tente novamente.');
         }
     }
 }
 
-// Definições das calorias para pratos, sobremesas e bebidas
+
 const pratos = [
     { nome: 'Vegetariano', calorias: 180 },
     { nome: 'Peixe', calorias: 230 },
@@ -42,20 +42,19 @@ const bebidas = [
     { nome: 'Refrigerante diet', calorias: 65 }
 ];
 
-// Mensagens para o usuário
+
 const mensagemPrato = `Escolha o prato:\n1 - Vegetariano (180 cal)\n2 - Peixe (230 cal)\n3 - Frango (250 cal)\n4 - Carne (350 cal)`;
 const mensagemSobremesa = `Escolha a sobremesa:\n1 - Abacaxi (75 cal)\n2 - Sorvete diet (110 cal)\n3 - Mousse diet (130 cal)\n4 - Mousse chocolate (190 cal)`;
 const mensagemBebida = `Escolha a bebida:\n1 - Chá (20 cal)\n2 - Suco de laranja (80 cal)\n3 - Suco de melão (90 cal)\n4 - Refrigerante diet (65 cal)`;
 
-// Obter escolhas do usuário
 let escolhaPrato = obterEscolha(mensagemPrato, pratos);
 let escolhaSobremesa = obterEscolha(mensagemSobremesa, sobremesas);
 let escolhaBebida = obterEscolha(mensagemBebida, bebidas);
 
-// Calcular total de calorias
+
 let totalCalorias = pratos[escolhaPrato].calorias + sobremesas[escolhaSobremesa].calorias + bebidas[escolhaBebida].calorias;
 
-// Exibir resultado
+
 alert(`Total de calorias da refeição: ${totalCalorias} cal`);
     </script>
 </body>
